@@ -1,0 +1,8 @@
+
+avrdude -c arduino -b 19200 -p xyz
+
+avrdude -c arduino -b 19200 -p m8 -P COM2 -n
+
+avrdude -c arduino -b 19200 -p m8 -P COM2 -U lfuse:w:0xE2:m -U hfuse:w:0xD9:m
+
+avrdude -c arduino -b 19200 -p t85 -P COM11 -U flash:w:filename.hex
